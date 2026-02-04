@@ -41,6 +41,6 @@ SELECT
 -- 주민번호 10월달에 태어난 사람을 조회 96'01'251236549 뒷자리 9개   
 SELECT
     * FROM student
-    WHERE JUMIN like '%10__________%';   
+    WHERE JUMIN like '%10_________%';   
 --
 
