@@ -344,11 +344,16 @@ create table board (
 --컬럼 추가,
 alter table board add (click_cnt number);
 alter table board modify content varchar2(1000);
+alter table board modify click_cnt number default 0;
+
 insert into board ( board_no, title , writer , content)
 values (3, 'test' ,'user01', '연습글입니다');     
 
 insert into board ( board_no, title , writer , content)
 values (2, 'test' ,'user02', '연습글입니다'); 
+
+insert into board ( board_no, title , writer , content)
+values (4, 'test' ,'user01', 'sql연습중'); 
 
 select * from board;
 commit;
